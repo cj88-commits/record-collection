@@ -43,7 +43,16 @@
       "Bash(./gradlew :app:compileDebugKotlin 2>&1 | grep -E \"error:|BUILD\" | head -10)",
       "Bash(find /c/record-collection -name \"*.kt\" -type f 2>/dev/null | head -50)",
       "Bash(find /c/record-collection -name \"*.kt\" -type f 2>/dev/null | tail -30)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(cd:*)",
+      "Bash(java:*)",
+      "Bash(javac:*)",
+      "Bash(mkdir:*)",
+      "Bash(adb devices:*)",
+      "Bash(ADB=\"/c/Users/chris/AppData/Local/Android/Sdk/platform-tools/adb.exe\"\n$ADB devices)",
+      "Bash(./gradlew assembleDebug 2>&1 | tail -20)",
+      "Bash(ADB=\"/c/Users/chris/AppData/Local/Android/Sdk/platform-tools/adb.exe\"\n$ADB install app/build/outputs/apk/debug/app-debug.apk)"
     ]
   }
 }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon foreground — vinyl record only, no background fill.
+    Viewport: 108×108dp  |  Center: (54, 54)
+    Safe zone: 72×72dp (radius ≤ 36 from center)
+    Record radius: 40  (~74 % of the 108dp tile — sits inside squircle with padding)
+    Label radius:  11  (~27 % of record)
+    Hole  radius:   1.4 (~13 % of label)
+    Path formula: M (54-r),54  a r,r 0 1,0 (2r),0  a r,r 0 1,0 -(2r),0  Z
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- ── Vinyl disc base: near-black blue-black, r=40 ── -->
+    <path
+        android:fillColor="#0D0D1A"
+        android:pathData="M14,54 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0 Z"/>
+
+    <!-- ── Groove rings: 12 concentric strokes, alternating #222233 / #161622 ── -->
+    <!-- r=37 --> <path android:fillColor="#00000000" android:strokeColor="#222233" android:strokeWidth="0.6"  android:pathData="M17,54 a37,37 0 1,0 74,0 a37,37 0 1,0 -74,0 Z"/>
+    <!-- r=35 --> <path android:fillColor="#00000000" android:strokeColor="#161622" android:strokeWidth="0.5"  android:pathData="M19,54 a35,35 0 1,0 70,0 a35,35 0 1,0 -70,0 Z"/>
+    <!-- r=33 --> <path android:fillColor="#00000000" android:strokeColor="#222233" android:strokeWidth="0.5"  android:pathData="M21,54 a33,33 0 1,0 66,0 a33,33 0 1,0 -66,0 Z"/>
+    <!-- r=31 --> <path android:fillColor="#00000000" android:strokeColor="#161622" android:strokeWidth="0.5"  android:pathData="M23,54 a31,31 0 1,0 62,0 a31,31 0 1,0 -62,0 Z"/>
+    <!-- r=29 --> <path android:fillColor="#00000000" android:strokeColor="#222233" android:strokeWidth="0.5"  android:pathData="M25,54 a29,29 0 1,0 58,0 a29,29 0 1,0 -58,0 Z"/>
+    <!-- r=27 --> <path android:fillColor="#00000000" android:strokeColor="#161622" android:strokeWidth="0.5"  android:pathData="M27,54 a27,27 0 1,0 54,0 a27,27 0 1,0 -54,0 Z"/>
+    <!-- r=25 --> <path android:fillColor="#00000000" android:strokeColor="#222233" android:strokeWidth="0.5"  android:pathData="M29,54 a25,25 0 1,0 50,0 a25,25 0 1,0 -50,0 Z"/>
+    <!-- r=23 --> <path android:fillColor="#00000000" android:strokeColor="#161622" android:strokeWidth="0.5"  android:pathData="M31,54 a23,23 0 1,0 46,0 a23,23 0 1,0 -46,0 Z"/>
+    <!-- r=21 --> <path android:fillColor="#00000000" android:strokeColor="#222233" android:strokeWidth="0.5"  android:pathData="M33,54 a21,21 0 1,0 42,0 a21,21 0 1,0 -42,0 Z"/>
+    <!-- r=19 --> <path android:fillColor="#00000000" android:strokeColor="#161622" android:strokeWidth="0.5"  android:pathData="M35,54 a19,19 0 1,0 38,0 a19,19 0 1,0 -38,0 Z"/>
+    <!-- r=17 --> <path android:fillColor="#00000000" android:strokeColor="#222233" android:strokeWidth="0.5"  android:pathData="M37,54 a17,17 0 1,0 34,0 a17,17 0 1,0 -34,0 Z"/>
+    <!-- r=15 --> <path android:fillColor="#00000000" android:strokeColor="#161622" android:strokeWidth="0.6"  android:pathData="M39,54 a15,15 0 1,0 30,0 a15,15 0 1,0 -30,0 Z"/>
+
+    <!-- ── Light sheen: soft radial highlight upper-left, ~18% opacity ── -->
+    <path android:pathData="M14,54 a40,40 0 1,0 80,0 a40,40 0 1,0 -80,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="32"
+                android:centerY="28"
+                android:gradientRadius="30">
+                <item android:offset="0.0"  android:color="#2EFFFFFF"/>
+                <item android:offset="0.45" android:color="#0FFFFFFF"/>
+                <item android:offset="1.0"  android:color="#00FFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ── Centre label: medium purple/violet with raised radial gradient ── -->
+    <path android:pathData="M43,54 a11,11 0 1,0 22,0 a11,11 0 1,0 -22,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="51"
+                android:centerY="49"
+                android:gradientRadius="12">
+                <item android:offset="0.0"  android:color="#FF9080CC"/>
+                <item android:offset="0.55" android:color="#FF7060B0"/>
+                <item android:offset="1.0"  android:color="#FF4A3880"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Label inner highlight at top for raised feel -->
+    <path android:pathData="M48,54 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="48"
+                android:gradientRadius="7">
+                <item android:offset="0.0"  android:color="#18FFFFFF"/>
+                <item android:offset="1.0"  android:color="#00FFFFFF"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- ── Spindle hole ── -->
+    <path
+        android:fillColor="#0D0D1A"
+        android:pathData="M52.6,54 a1.4,1.4 0 1,0 2.8,0 a1.4,1.4 0 1,0 -2.8,0 Z"/>
+
+</vector>

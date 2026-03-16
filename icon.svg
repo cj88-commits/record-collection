@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Radial sheen gradient on vinyl -->
+    <radialGradient id="vinylSheen" cx="42%" cy="38%" r="55%" fx="42%" fy="38%">
+      <stop offset="0%" stop-color="#1E2A4A" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#1A1A2E" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0F0F1E" stop-opacity="0.6"/>
+    </radialGradient>
+    <!-- Subtle edge shadow on vinyl -->
+    <radialGradient id="vinylEdge" cx="50%" cy="50%" r="50%">
+      <stop offset="82%" stop-color="#1A1A2E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#080810" stop-opacity="0.8"/>
+    </radialGradient>
+    <!-- Label gradient for depth -->
+    <radialGradient id="labelGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#00859A"/>
+      <stop offset="100%" stop-color="#004A56"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="220" ry="220" fill="#0D1B2A"/>
+
+  <!-- Vinyl record base -->
+  <circle cx="512" cy="512" r="340" fill="#1A1A2E"/>
+
+  <!-- Grooves: 7 concentric rings, evenly spaced from r=280 down to r=178 -->
+  <circle cx="512" cy="512" r="278" fill="none" stroke="#2A3A4A" stroke-width="1.8"/>
+  <circle cx="512" cy="512" r="253" fill="none" stroke="#2A3A4A" stroke-width="1.4"/>
+  <circle cx="512" cy="512" r="228" fill="none" stroke="#2A3A4A" stroke-width="1.4"/>
+  <circle cx="512" cy="512" r="203" fill="none" stroke="#2A3A4A" stroke-width="1.4"/>
+  <circle cx="512" cy="512" r="178" fill="none" stroke="#2A3A4A" stroke-width="1.4"/>
+  <circle cx="512" cy="512" r="153" fill="none" stroke="#2A3A4A" stroke-width="1.4"/>
+  <circle cx="512" cy="512" r="128" fill="none" stroke="#2A3A4A" stroke-width="1.8"/>
+
+  <!-- Radial sheen overlay for vinyl depth -->
+  <circle cx="512" cy="512" r="340" fill="url(#vinylSheen)"/>
+
+  <!-- Edge darkening -->
+  <circle cx="512" cy="512" r="340" fill="url(#vinylEdge)"/>
+
+  <!-- Centre label -->
+  <circle cx="512" cy="512" r="95" fill="url(#labelGrad)"/>
+
+  <!-- Spindle hole -->
+  <circle cx="512" cy="512" r="12" fill="#0D1B2A"/>
+</svg>
