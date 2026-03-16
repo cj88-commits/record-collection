@@ -104,10 +104,10 @@ Connections over Tailscale (including self-signed certificates on private IP ran
 
 ## Screenshots
 
-*Coming soon.*
+See [recordcollection.netlify.app](https://recordcollection.netlify.app) for screenshots.
 
 ---
 
 ## License
 
-*License to be determined.*
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
